@@ -23,7 +23,7 @@ playSound("2865227271")
 
 -- GUI Creation
 local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "SuperRingPartsGUI"
+ScreenGui.Name = "SuperRingParts"
 ScreenGui.ResetOnSpawn = false
 ScreenGui.Parent = LocalPlayer:WaitForChild("PlayerGui")
 
@@ -113,16 +113,6 @@ RadiusDisplay.Parent = MainFrame
 local RadiusCorner = Instance.new("UICorner")
 RadiusCorner.CornerRadius = UDim.new(0, 10)
 RadiusCorner.Parent = RadiusDisplay
-
-local Watermark = Instance.new("TextLabel")
-Watermark.Size = UDim2.new(1, 0, 0, 20)
-Watermark.Position = UDim2.new(0, 0, 1, -20)
-Watermark.Text = "Super Ring [V3.2] - Cracked By @cqwe5qwe5"
-Watermark.TextColor3 = Color3.fromRGB(101, 67, 33) -- Dark brown
-Watermark.BackgroundTransparency = 1
-Watermark.Font = Enum.Font.Fondamento
-Watermark.TextSize = 14
-Watermark.Parent = MainFrame
 
 -- Add minimize button
 local MinimizeButton = Instance.new("TextButton")
@@ -322,7 +312,7 @@ StarterGui:SetCore("SendNotification", {
 })
 
 -- Get player thumbnail
-local userId = Players:GetUserIdFromNameAsync("cqwe5qwe5")
+local userId = Players:GetUserIdFromNameAsync("Azmac102289p")
 local thumbType = Enum.ThumbnailType.HeadShot
 local thumbSize = Enum.ThumbnailSize.Size420x420
 local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
